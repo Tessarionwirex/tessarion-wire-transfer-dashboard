@@ -1,0 +1,15 @@
+git clone https://github.com/Tessarionx/tessarion-wire-transfer-dashboard.git
+cd tessarion-wire-transfer-dashboard
+
+npm init -y
+npm install react react-dom next @supabase/supabase-js tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+
+# Set up Tailwind
+echo "module.exports = {
+  content: ['pages/**/*.{js,ts,jsx,tsx}', 'components/**/*.{js,ts,jsx,tsx}'],
+  theme: { extend: {} },
+  plugins: [],
+}" > tailwind.config.js
+
+echo "@tailwind base;\n@tailwind components;\n@tailwind utilities;" > styles/globals.css
