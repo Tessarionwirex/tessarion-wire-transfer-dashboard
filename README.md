@@ -13,3 +13,6 @@ A full-stack, real-time React + Supabase admin interface for managing secure int
 ```bash
 npm install
 npm run dev
+Add .env.local:
+NEXT_PUBLIC_SUPABASE_URL=https://your‑project.supabase.co
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your‑anon‑key
